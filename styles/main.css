@@ -1,0 +1,49 @@
+html
+{
+background-image: url('images/pixflowers.png');
+background-attachment: fixed;
+
+}
+
+div {
+    text-align: center;
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto;
+    width:900px;
+    height: auto;
+    font-family: 'VT323', monospace;
+  }
+
+  /* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 33%;
+    }
+
+    .middle {
+    width: 33%;
+    }
+
+    .right {
+    width: 34%;
+    }
+
+    .row {
+      position: fixed;
+    }
+
+    p {
+      margin-top: -20px;
+      background-color: #8b9d85;
+
+    }
+
+    .insides{
+    font-size: 30px;
+
+    }
