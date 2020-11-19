@@ -56,10 +56,24 @@ div {
 
     }
 
+    .sprint1TECH{
+      width: 40%;
+      float: left;
+
+
+    }
+
+    .sprint1CORE{
+      width: 40%;
+      float: right;
+      
+
+
+    }
+
     .row {
       margin-top: 20px;
       position: fixed;
-
       border-style: solid;
       border: 5px solid black;
       border-radius: 10px;
@@ -124,7 +138,19 @@ div {
   font-family: 's', cursive !important;
 
 }
+#menusprint1 {
 
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-family: 's', cursive !important;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: #8b9d85;
+
+
+}
 h4 {
   text-align: left;
   font-size: 35px;
@@ -145,7 +171,7 @@ h3 {
 }
 .submenu {
   font-size: 20px;
-  background-color: #ac2f3e; /* Green */
+  background-color: #ac2f3e;
   border: none;
   color: white;
   padding: 15px 32px;
