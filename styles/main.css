@@ -66,7 +66,7 @@ div {
     .sprint1CORE{
       width: 40%;
       float: right;
-      
+
 
 
     }
@@ -193,3 +193,16 @@ h3 {
 #epigrafe {
   text-align: center;
 }
+
+img {
+   padding:1px;
+   border:1px solid #8b9d85;
+   background-color: #ac2f3e;
+}
+
+.notstyled {
+  padding: 0px !important;
+  border: none !important;
+  background-color: white !important;
+
+};
