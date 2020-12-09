@@ -58,7 +58,9 @@ if(document.getElementById("hole")){
   var n = gameBoard.rows[randomIndex].cells[randomIndex1]
   n.setAttribute("id", "hole");
   n.setAttribute('onClick', "addImgRandom();")
-  
+  var audio = new Audio();
+  audio.src = "whack-audio.wav";
+  audio.play();
 
 }
 }
