@@ -13,13 +13,13 @@ var uni1number = 0
 var uni2number = 0
 function changeImage1() {
 console.log(document.getElementById("horse1").src);
-var uni0 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-0.png'
+var uni0 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-0.png'
 //var uni0 = "./images/unicorn-0.png"
-var uni1 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-1.png'
+var uni1 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-1.png'
 //var uni1e = "./images/unicorn-1.png"
-var uni2 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-2.png'
+var uni2 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-2.png'
 //var uni2 = "./images/unicorn-2.png"
-var uni3 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-3.png'
+var uni3 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-3.png'
 //var uni3plane = "./images/unicorn-3.png"
 
   if (uni0number === 0 && document.getElementById("horse1").src == uni0)
@@ -52,14 +52,13 @@ var uni3 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-u
 
 function changeImage2() {
 
-  var uni0 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-0.png'
+  var uni0 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-0.png'
   //var uni0 = "./images/unicorn-0.png"
-  var uni1 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-1.png'
+  var uni1 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-1.png'
   //var uni1e = "./images/unicorn-1.png"
-  var uni2 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-2.png'
+  var uni2 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-2.png'
   //var uni2 = "./images/unicorn-2.png"
-  var uni3 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-3.png'
-  //var uni3plane = "./images/unicorn-3.png"
+  var uni3 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-3.png'
   //var uni3plane = "./images/unicorn-3.png"
 
   if (uni1number === 0 && document.getElementById("horse2").src == uni0)
@@ -95,14 +94,13 @@ function changeImage2() {
 
 function changeImage3() {
 
-  var uni0 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-0.png'
+  var uni0 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-0.png'
   //var uni0 = "./images/unicorn-0.png"
-  var uni1 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-1.png'
+  var uni1 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-1.png'
   //var uni1e = "./images/unicorn-1.png"
-  var uni2 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-2.png'
+  var uni2 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-2.png'
   //var uni2 = "./images/unicorn-2.png"
-  var uni3 = 'file:///Users/ncou/Dev-Academy/mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-3.png'
-  //var uni3plane = "./images/unicorn-3.png"
+  var uni3 = 'https://mariano-zeppa.github.io/inflate-the-unicorn/images/unicorn-3.png'
   if (uni2number === 0 && document.getElementById("horse3").src == uni0)
     {
             document.getElementById("horse3").src = uni1;
