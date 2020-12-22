@@ -17,7 +17,7 @@ function initBoard () {
   return true
 }
 
-// Draw board based on number of cells and an assumption about how much 
+// Draw board based on number of cells and an assumption about how much
 // space should be allowed for each cell.
 function drawBoard (boardNode) {
   boardNode.style.width = Math.sqrt(board.cells.length) * 85 + 'px'
@@ -71,6 +71,8 @@ function showCell (evt) {
   evt.target.classList.remove('hidden')
   evt.target.classList.remove('marked')
   if (evt.target.classList.contains('mine')) {
+    var audioboom = new Audio('bomb1.mp3');
+    audioboom.play();
     displayMessage('BOOM!')
     revealMines()
     removeListeners()
@@ -79,6 +81,8 @@ function showCell (evt) {
   setInnerHTML(cell)
   if (cell.surroundingMines === 0) {
     showSurrounding(evt.target)
+    var audioreveal= new Audio('reveal.mp3');
+    audioreveal.play();
   }
 }
 
@@ -88,6 +92,9 @@ function markCell (evt) {
   var idx = getCellIndex(getRow(evt.target), getCol(evt.target))
   var cell = board.cells[idx]
   cell.isMarked = cell.isMarked ? false : true
+  var audiomark= new Audio('mark.wav');
+  audiomark.play();
+
 }
 
 // Array.includes polyfill
@@ -164,7 +171,7 @@ function setInnerHTML (cell) {
   if (element.innerHTML !== '') {
     return
   }
-  element.innerHTML = cell.surroundingMines > 0 ? 
+  element.innerHTML = cell.surroundingMines > 0 ?
     cell.surroundingMines : ''
   if (element.classList.contains('hidden')) {
     cell.hidden = false

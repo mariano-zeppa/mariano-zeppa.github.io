@@ -77,11 +77,19 @@ var board = {
           }]
     }
 
+function isMineorNot () {
+return  Math.random() < 0.5;
+}
+
+function resetBoard () {
+window.location.reload();
+}
 function startGame () {
   // Don't remove this function call: it makes the game work!
 
   for (i = 0; i < board.cells.length; i++){
     board.cells[i].surroundingMines = countSurroundingMines(board.cells[i])
+    board.cells[i].isMine = isMineorNot(board.cells[i])
   }
   document.addEventListener("click", checkForWin)
   document.addEventListener("contextmenu", checkForWin)
@@ -101,10 +109,14 @@ function checkForWin () {
     for (i = 0; i < board.cells.length; i++){
       if(board.cells[i].isMine === true && board.cells[i].isMarked === true){ // if true then:
       } else if (board.cells[i].hidden === false && board.cells[i].isMine === false ){
-        // you = win
+        // you = winapp
       } else return
     }
-lib.displayMessage('You win!');
+    var audiowin = new Audio('applause.mp3');
+    audiowin.play();
+    lib.displayMessage('You win!');
+
+
   };
 
 
