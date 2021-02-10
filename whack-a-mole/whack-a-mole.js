@@ -79,12 +79,13 @@ document.getElementById("highscore").innerHTML = highscore;
 if (counter == 5) {
 console.log(counter);
 }
+
 function incrementSeconds() {
   seconds += 1;
   el.innerText = seconds;
   if (seconds == 11){
     counter = counter - 1;
-    alert('Congrats! You killed ' + counter + ' Moles');
+    //alert('Congrats! You killed ' + counter + ' Moles');
     location.reload();
     document.getElementById("highscore").innerHTML = counter;
   }
